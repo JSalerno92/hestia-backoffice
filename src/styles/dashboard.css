@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    font-family: system-ui;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    height: 100vh;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: var(--main-color);
+    color: rgb(var(--white));
+}
+
+.sidebar nav {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar button {
+    width: calc(100% - 20px);
+    padding: 8px 0;
+    background: none;
+    border-radius: var(--border-radius);
+    border: none;
+    color: rgb(var(--white));
+    text-align: left;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.sidebar button:hover {
+    background: var(--secondary-color);
+    padding: 8px;
+}
+
+.sidebar button:hover::before {
+    content: '♦';
+    padding: 4px;
+}
+
+.sidebar button.active {
+    background: var(--secondary-color);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: var(--header-background);
+    border-bottom: var(--home-background) 1px solid;
+}
+
+.topbar h1 {
+    color: rgba(var(--black), .75);
+}
+
+#pageContent {
+    padding: 25px;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.table {
+    width:100%;
+    border-collapse: collapse;
+    background: rgba(var(--white), .75);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    border-bottom: var(--home-background) 2px solid;
+    text-align: left;
+}
+
+.btn {
+    padding: 6px 10px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.btn-edit {
+    background: var(--main-color);
+    color: rgb(var(--white));
+}
+
+.btn-edit:hover {
+    background: var(--secondary-color);
+}
+
+.btn-delete {
+    background: var(--del-btn);
+    color: rgb(var(--white));
+}
+
+.btn-delete:hover {
+    background: var(--del-secondary);
+    color: rgb(var(--white));
+}
+
+.modal-overlay {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    inset: 0;
+    background: rgba(var(--black), .4);
+    position: fixed;
+    z-index: 1000;
+    overflow: auto;
+}
+
+.modal {
+    width: 420px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(var(--white));
+    border-radius: var(--border-radius);
+    gap: 10px;
+}
+
+.modal input,
+.modal textarea {
+    width: 100%;
+    padding: 8px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* new service */
+button {
+    padding: 8px 12px;
+    border-radius: var(--border-radius);
+    border: none;
+    background: var(--main-color);
+    color: rgba(var(--white), .75);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+button:hover {
+    background: var(--secondary-color);
+    color: rgba(var(--white), 1);
+}
+
+/* logout btn */
+#logoutBtn {
+    padding: 8px 12px;
+    border-radius: var(--border-radius);
+    border: none;
+    background: var(--del-btn);
+    color: rgba(var(--white), .75);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+#logoutBtn:hover {
+    background: var(--del-secondary);
+    color: rgba(var(--white), 1);
+}

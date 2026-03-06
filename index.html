@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Casa Hestia Backoffice</title>
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="stylesheet" href="/src/styles/dashboard.css">
+    <link rel="stylesheet" href="/src/styles/forms.css">
+  </head>
+  <body>
+    <div class="dashboard">
+
+      <aside class="sidebar">
+
+        <img src="/public/hestia-logo.svg" alt="Hestia logo">
+
+        <h2>Casa Hestia</h2>
+
+        <nav>
+
+          <button data-page="services">
+          Servicios
+          </button>
+
+          <button data-page="availability">
+          Turnos
+          </button>
+
+          <button data-page="providers">
+          Providers
+          </button>
+
+        </nav>
+
+      </aside>
+
+      <main class="main">
+
+        <header class="topbar">
+
+          <h1 id="pageTitle">Servicios</h1>
+
+          <button id="logoutBtn">
+          Cerrar sesión
+          </button>
+
+        </header>
+
+        <section id="pageContent"></section>
+
+      </main>
+
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+
+    </body>
+</html>
