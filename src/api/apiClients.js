@@ -1,5 +1,7 @@
 import { getToken } from '../auth/authStore.js';
 
+console.log("ENV API:", import.meta.env.VITE_API_URL);
+
 const API_URL = import.meta.env.VITE_API_URL;
 
 export async function apiFetch(path, options = {}){
