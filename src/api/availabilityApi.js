@@ -1,5 +1,9 @@
 import { apiFetch } from "./apiClients";
 
+export function getAvailability() {
+    return apiFetch('/api/services');
+}
+
 export async function previewAvailability(payload) {
   return apiFetch('/api/admin/availability/preview', {
     method: 'POST',

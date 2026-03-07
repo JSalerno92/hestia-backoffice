@@ -191,3 +191,36 @@ button:hover {
     background: var(--del-secondary);
     color: rgba(var(--white), 1);
 }
+
+/* dashboard charts */
+.dashboard-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.stats-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.stat-card{
+    background: rgba(var(--white), .75);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 6px rgba(var(--black), .1);
+    text-align: center;
+}
+
+.stat-card h3{
+    font-size: 32px;
+}
+
+.chart-card{
+    width: fit-content;
+    background: rgba(var(--white), .75);
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
