@@ -11,7 +11,7 @@ export async function renderWelcomeMessagesPage(container){
       <h2>Mensajes de Bienveinida</h2>
 
       <button id="createWelcomeMessageBtn">
-        New Message
+        Mensaje nuevo
       </button>
 
     </div>

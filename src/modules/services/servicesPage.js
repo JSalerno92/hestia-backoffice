@@ -7,7 +7,7 @@ export async function renderServicesPage(container){
     container.innerHTML = `
         <div style="display:flex;justify-content:space-between;margin-bottom:20px;">
             <h2>Servicios</h2>
-            <button id="createServiceBtn">New Service</button>
+            <button id="createServiceBtn">Servicio nuevo</button>
         </div>
 
         <div id="servicesTable"></div>

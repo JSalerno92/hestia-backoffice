@@ -12,7 +12,7 @@ export async function renderAvailabilityTable(container) {
           <th>Servicio</th>
           <th>Fecha</th>
           <th>Hora</th>
-          <th>Capacity</th>
+          <th>Capacidad</th>
           <th>Reservados</th>
           <th>Disponibles</th>
           <th>Acción</th>

@@ -36,10 +36,10 @@ export function renderServicesTable(container, services){
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Code</th>
-                    <th>Name</th>
-                    <th>Duration</th>
-                    <th>Status</th>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Duración (minutos)</th>
+                    <th>Estado</th>
                     <th></th>
                 </tr>
             </thead>

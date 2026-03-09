@@ -13,28 +13,28 @@ export function openWelcomeMessageModal(message = null) {
 
       <form class="backoffice-form" id="welcomeMessageForm">
 
-        <label>Title</label>
+        <label>Título</label>
         <input name="title" required value="${message?.title || ''}" />
 
-        <label>Message</label>
+        <label>Mensaje</label>
         <input name="message" required value="${message?.message || ''}" />
 
-        <label>Sub Message</label>
+        <label>Sub mensaje</label>
         <input name="sub_message" value="${message?.sub_message || ''}" />
 
-        <label>Duration (ms)</label>
+        <label>Duración (ms)</label>
         <input type="number" name="duration_ms" value="${message?.duration_ms || 3000}" />
 
-        <label>Priority</label>
+        <label>Prioridad</label>
         <input type="number" name="priority" value="${message?.priority || 0}" />
 
-        <label>Valid From</label>
+        <label>Válido desde</label>
         <input type="date" name="valid_from" value="${message?.valid_from ? message.valid_from.split('T')[0] : ''}" />
 
-        <label>Valid To</label>
+        <label>Válido hasta</label>
         <input type="date" name="valid_to" value="${message?.valid_to ? message.valid_to.split('T')[0] : ''}" />
 
-        <label>Active</label>
+        <label>Activo</label>
         <input type="checkbox" name="is_active" ${message?.is_active ? 'checked' : ''} />
 
         <label>Default</label>
@@ -43,11 +43,11 @@ export function openWelcomeMessageModal(message = null) {
         <div class="modal-actions">
 
           <button class="cancel-btn" type="button" id="cancelBtn">
-            Cancel
+            Cancelar
           </button>
 
           <button class="submit-btn" type="submit">
-            Save
+            Guardar
           </button>
 
         </div>

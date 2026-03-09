@@ -45,11 +45,11 @@ export function renderWelcomeMessagesTable(container, messages){
 
       <thead>
         <tr>
-          <th>Title</th>
-          <th>Message</th>
-          <th>Duration</th>
-          <th>Priority</th>
-          <th>Status</th>
+          <th>Título</th>
+          <th>Mensaje</th>
+          <th>Duración</th>
+          <th>Prioridad</th>
+          <th>Estado</th>
           <th>Default</th>
           <th></th>
         </tr>

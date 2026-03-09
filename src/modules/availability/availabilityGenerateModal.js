@@ -58,13 +58,13 @@ export function openGenerateModal(services) {
             </div>
 
             <div class="backoffice-group">
-                <label>Capacity a agregar</label>
+                <label>Capacidad a agregar</label>
                 <input type="number" name="capacity_to_add" value="1" min="1" required>
             </div>
 
             <div class="backoffice-group">
                 <button type="button" id="previewBtn">
-                PREVIEW
+                    Previsualización
                 </button>
 
                 <div id="previewResult"></div>
