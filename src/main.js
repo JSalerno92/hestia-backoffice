@@ -1,5 +1,6 @@
 // import { renderDashboard } from './pages/dashboard.js';
 import { logout } from './auth/authStore.js';
+import { requireAuth } from './auth/requireAuth.js';
 import { renderDashboard } from './pages/dashboard/dashboardPage.js';
 import { renderServicesPage } from './modules/services/servicesPage.js';
 import { renderAvailabilityPage } from './modules/availability/availabilityPage.js';
@@ -40,6 +41,10 @@ document.querySelectorAll('[data-page]').forEach(btn => {
 });
 
 document.getElementById('logoutBtn').addEventListener('click', logout);
+
+document.addEventListener('DOMContentLoaded', () => {
+  requireAuth();
+});
 
 pageTitle.textContent = 'Dashboard';
 renderDashboard(content);
