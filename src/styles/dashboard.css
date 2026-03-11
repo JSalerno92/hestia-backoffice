@@ -177,6 +177,22 @@ button:hover {
 }
 
 /* logout btn */
+#userBtn {
+    padding: 8px 12px;
+    border-radius: var(--border-radius);
+    border: none;
+    background: var(--main-color);
+    color: rgba(var(--white), .75);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+#userBtn:hover {
+    background: var(--secondary-color);
+    color: rgba(var(--white), 1);
+}
+
+/* logout btn */
 #logoutBtn {
     padding: 8px 12px;
     border-radius: var(--border-radius);

@@ -5,6 +5,7 @@ import { renderDashboard } from './pages/dashboard/dashboardPage.js';
 import { renderServicesPage } from './modules/services/servicesPage.js';
 import { renderAvailabilityPage } from './modules/availability/availabilityPage.js';
 import { renderWelcomeMessagesPage } from './modules/welcome-message/welcomeMessagePage.js';
+import { renderUsersPage } from './modules/users/usersPage.js';
 
 const content = document.getElementById('pageContent');
 const pageTitle = document.getElementById('pageTitle');
@@ -35,6 +36,10 @@ document.querySelectorAll('[data-page]').forEach(btn => {
       renderWelcomeMessagesPage(content);
     }
     
+    if (page === 'backoffice-user') {
+      pageTitle.textContent = 'Usuario de backoffice';
+      renderUsersPage(content);
+    }
 
   });
 

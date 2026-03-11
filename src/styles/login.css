@@ -41,6 +41,15 @@ form{
     gap:15px;
 }
 
+.password-field {
+    width: 100%;
+    display: flex;
+}
+
+.password-field input {
+    width: 100%;
+}
+
 input{
     padding:12px;
     border-radius:6px;

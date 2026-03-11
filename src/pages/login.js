@@ -36,3 +36,16 @@ form.addEventListener('submit', async (e) => {
     }
 
 });
+
+const passwordInput = document.getElementById('passwordInput');
+const togglePassword = document.getElementById('togglePassword');
+
+togglePassword.addEventListener('click', () => {
+
+  const isHidden = passwordInput.type === 'password';
+
+  passwordInput.type = isHidden ? 'text' : 'password';
+
+  togglePassword.textContent = isHidden ? '🙈' : '👁';
+
+});
